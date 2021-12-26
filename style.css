@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap'); /*oswald*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); /*Roboto Condense*/
+
+
+:root{
+    --dark-blue: rgb(0, 86, 148);
+    --white-smoke: rgb(231, 228, 228, 0.897);
+    --black: rgb(0, 0, 0);
+    --gray-smoke: rgba(63, 56, 56, 0.952);
+    --none:rgba(167, 194, 192, 0.747);
+}
+
+/* HEADER */
+nav{
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav img{
+    width: 160px;
+    padding: 6px;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    font-size: 15px;
+}
+
+.menu ul li{
+    margin: 15px;
+    font-weight: bold;
+
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+/* MAIN */
+
+main{
+    background: var(--white-smoke);
+    display: flex;
+    padding: 160px 0;
+}
+main .main{
+    display: flex;
+    
+    
+}
+
+main h1{
+    /* height: 200px; */
+    padding: 20px;
+    color: var(--dark-blue);
+}
+
+.content{
+    width: 400px;
+    font-weight: 300;
+    margin: auto;
+}
+
+ .content h2 span{
+    color: var(--dark-blue);
+ }
+
+ .content p{
+     text-align: start;
+     font-size: 19px;
+ }
+
+/* CLIENTES */
+
+
+.clientes{
+    background-color:var(--none) ;
+    padding: 110px 0;
+}
+
+.clientes h2{
+    color: var(--dark-blue);
+    text-align: center;
+    margin: 0;
+    font-size: 35px;
+}
+
+.container-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.info {
+    
+    width: 290px;
+}
+
+.info img{
+    padding: 20px;
+    width: 150px;
+}
+
+
+/* CONTACTO */
+
+
+.contacto{
+    background-color: var(--white-smoke);
+    padding: 160px 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto h2{
+    color: var(--dark-blue);
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+}
+
+.contacto p{
+    color: var(--black);
+    font-weight: bold;
+    text-align: start;
+    padding: 12px;
+}
+
+/* .contacto .form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.contacto .form label{
+    color: var(--dark-blue);
+    font-weight: bold;
+    margin: 6px;
+    display: block;
+}
+
+.contacto .form input{
+    width: 100%;
+    border: none;
+    padding: 0.5em;
+    margin-top: 0.3em;
+}
+
+.contacto .form .area{
+    width: 210px;
+    height: 190px;
+    border: none;
+}
+
+.contacto .form .enviar{
+    background-color: var(--black);
+    color: var(--none);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+
+footer{
+    background-color:var(--black);
+    color: var(--black);
+    padding: 160px 0;
+}
+
+footer .logo{
+    width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .redes a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+
+
+
+footer .redes{
+    background-color:var(--white-smoke);
+    width: 300px;
+    height: 100px;
+    border-radius: 8px;
+    
+
+}
+
+/* ATTRIBUTION */
+
+.attribution{
+    background: rgba(31, 28, 28, 0.788);
+    color: whitesmoke;
+    padding-top: 5px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: rgb(87, 154, 209);
+}
+
+
+/* MEDIA */
+
+@media only screen and (max-width: 420px){
+    nav{
+        display: block;
+    }
+    
+    .content{
+        width: 250px;
+        margin: auto;
+        font-weight: 200px;
+    }
+    
+    .content p{
+        padding-top: 8px;
+    }
+    .clientes{
+    
+        padding: 95px 0;
+    }
+    .clientes h2{
+        font-size: 20px;
+    }
+
+     .container-info{
+        flex-direction: column;
+        padding-left: 100px;
+    }
+
+    .contacto{
+        padding: 110px 0;
+
+    }
+    
+    .contacto p{
+        padding-left: 30px;
+    }
+    
+    footer .footer-container{
+        flex-direction: column;
+    }
+   footer .redes{
+       border-radius: none;
+   }
+    
+}
+
+@media only screen and (max-width: 720px ) {
+    main{
+        flex-direction: column;
+        padding: 120px 0;
+    }
+    main h1{
+        margin-top: auto;
+    }
+
+}
